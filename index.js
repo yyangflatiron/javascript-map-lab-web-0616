@@ -34,6 +34,7 @@ const zebraStripes = [
 
 counter = 0
 
+function MapZebraStripes(){
 var coloredZebraStripes = zebraStripes.map(
   function(zebra){
   var newZebra={}
@@ -44,3 +45,4 @@ var coloredZebraStripes = zebraStripes.map(
   return newZebra
   }
 )
+}
