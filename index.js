@@ -32,17 +32,12 @@ const zebraStripes = [
   { width: 7.31, color: null },
 ];
 
-counter = 0
-
-function MapZebraStripes(){
-var coloredZebraStripes = zebraStripes.map(
-  function(zebra){
+var coloredZebraStripes = zebraStripes.map((zebra,index)=>
+  {
   var newZebra={}
   newZebra.width = zebra.width
-  counter ++
-  if (counter%2==0){newZebra.color='white'}
-  else{newZebra.color='black'}
+  if (index%2==0){newZebra.color='black'}
+  else{newZebra.color='white'}
   return newZebra
   }
 )
-}
